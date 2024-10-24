@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solving Questions</title>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+				border-left-color: white;
+				border-right-color: white;
+			.second-video {
+				margin-top: 20px;
+			}
+			}
+			body {
+				color: white;
+				font-family: Arial, sans-serif;
+				background-image: url('https://images5.alphacoders.com/133/thumb-1920-1337360.png');
+			}
+			p {
+				font-size: 200%;
+				color: white;
+			}
+			h1, h3 {
+				color: white;
+			}
+			img {
+				border: 5px solid black;
+				border-radius: 10px;
+				box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+				display: inline-block;
+				background-color: black;
+				margin: 1px;
+				width: 130px;
+				height: 140px;
+			}
+			.container {
+				margin-top: 20px;
+				text-align: center;
+			}
+			input[type="text"] {
+				width: 300px;
+				padding: 10px;
+				margin: 10px;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+			}
+			button {
+				padding: 10px 20px;
+				background-color: #4CAF50;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: #45a049;
+			}
+			#result {
+				margin-top: 20px;
+				color: white;
+			    <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			}
+				#redirectButton {
+				background-color: white;
+				color: black;
+				border: 2px solid black;
+				padding: 10px 20px;
+				font-size: 16px;
+				cursor: pointer;
+				border-radius: 5px;
+				}
+			#redirectButton:hover {
+            background-color: lightgray;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center"> Solving Problems </h1>
+		<h3 align="center"> Solve all problems in the box provided at table. (It's more like a cult web page)</h3>
+		<h4 align="center"><b>Note:</b> It cannot handle multiple operations at once. It can serve as a simple calculator too.</h4>
+		<h4 align="center"><b>Use:</b> * for multiplication | + for addition | - for minus | / for division</h4>
+		<table align="center" style="font-size: 14px;">
+			<tr>
+				<td>35 + 5?</td>
+				<td>63 - 5?</td>
+				<td>92 - 123?</td>
+				<td>313 / 2?</td>
+				<td>55 + 18?</td>
+				<td>211 - 55?</td>
+				<td>89 - 35?</td>
+				<td>169 / 2?</td>
+				<td>12 - 11?</td>
+				<td>89 + 14?</td>
+				<td>234 / 6</td>
+				<td>13-5</td>
+				<td>834-135-123</td>
+			</tr>
+		</table>
+		<div class="container">
+			<h3>Enter a math problem (e.g., 35+5):</h3>
+			<input type="text" id="question" placeholder="Type your question here" />
+			<button onclick="solve()">Solve</button>
+			<div id="result"></div>
+		</div>
+
+		<script>
+			function solve() {
+				const question = document.getElementById('question').value;
+				try {
+					const answer = eval(question);
+					document.getElementById('result').innerHTML = `The answer is: ${answer}`;
+				} catch (error) {
+					document.getElementById('result').innerHTML = 'Invalid input. Please enter a valid math problem.';
+				}
+			}
+		</script>
+		
+		<p align="center"><b>While solving, you can look at these images</b></p>
+		
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bv4KzJgSBjlAra6uLN69L0IuaN5utBeiAA&s">
+		<img src="https://i.pinimg.com/736x/78/f4/d6/78f4d6997b89046435010e096c6721ce.jpg">
+		<img src="https://i.pinimg.com/736x/d0/5d/dd/d05ddd99914a53d4e500c146e950c9f9.jpg">
+		<img src="https://i.pinimg.com/736x/1a/69/ec/1a69ec29c92917281bb6ecfdfbff6605.jpg">
+		<img src="https://i.pinimg.com/736x/9d/32/ac/9d32ac51d9ce83dcc7f8c48c5f64e4d8.jpg">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Rq42r_4TyH-B6vinHUg-_daEZNN69tnReg&s">
+		<img src="https://i.pinimg.com/736x/06/a9/e3/06a9e35284041072fe1ce3e2ebddd4ed.jpg">
+		<img src="https://i.pinimg.com/550x/82/2f/b5/822fb5e2fea3848e286d63f70375c835.jpg">
+		
+		<p align="center"><b>You may also watch the videos while solving</b></p>
+		<video height="320" width="290" autoplay muted controls>
+			<source src="kanaarimaedit.mp4" type="video/mp4">
+		</video>
+		<video height="320" width="290" autoplay muted controls>
+			<source src="kanaarimaeditv2.mp4" type="video/mp4">
+		</video>
+		<video height="320" width="290" autoplay muted controls>
+			<source src="kanaarimaeditv3.mp4" type="video/mp4">
+		</video>
+		</video>
+		<video height="320" width="330" autoplay muted controls>
+			<source src="kanaarimaeditv4.mp4" type="video/mp4">
+		</video>
+		
+		
+		<h3><b>To learn more about this silly project, click this button:</b></h3>
+	    <button id="redirectButton">Go to Youtube Channel</button>
+		<script>
+			document.getElementById('redirectButton').onclick = function() {
+				window.location.href = 'https://www.youtube.com/@WhitetheCa/videos';
+        };
+		</script>
+	</body>
+</html>
